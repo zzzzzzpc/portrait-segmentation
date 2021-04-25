@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask上传图片演示</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+    <h1>基于深度学习的人像分割模型</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <h3>选择人像图</h3>
+        <input type="file" name="file" class="file" style="margin-top:20px;"/>
+        <h3>选择背景图</h3>
+        <input type="file" name="fileback" class="file" style="margin-top:20px;">
+        &emsp;
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <br>
+    <img src="{{ url_for('static', filename= './images/portrait.jpg',_t=val1) }}"  alt="请上传图片"/>
+    <img src="{{ url_for('static', filename= './images/background.jpg',_t=val1) }}"  alt="请上传图片"/>
+    <h3>结果图</h3>
+    <img src="{{ url_for('static', filename= './images/result.jpg',_t=val1) }}"  alt="请上传图片"/>
+    <br>
+    <hr style=" height:10px;border:none;border-top:10px groove skyblue;" />
+
+</body>
+
+</html>

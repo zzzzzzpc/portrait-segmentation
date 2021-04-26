@@ -19,7 +19,7 @@
    - README.md
    - requirements.txt
 
-export：存储模型代码，在tfserving中，1代表版本号，tfserving会自动追溯最新的版本号，并且支持热更新。
+export：存储模型代码，在tfserving中，1代表版本号，tfserving会自动追溯最新的版本号，并且支持热更新。  
 segmentation：保存了人像分割图像预处理与后处理的函数，包括和服务器通信部分的代码。  
 static：css样式，images文件夹会临时保存上传的图片以及最终模型输出的图片。  
 templates：保存了index.html和index_ok.html，分别对应上传和上传成功之后的页面。  
